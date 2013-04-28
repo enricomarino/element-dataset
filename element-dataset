@@ -1,0 +1,8 @@
+{
+  "name": "element-data",
+  "repo": "enricomarino/element-data",
+  "description": "Element dataset component",
+  "version": "0.0.1",
+  "dependencies": {},
+  "scripts": ["index.js"]
+}
