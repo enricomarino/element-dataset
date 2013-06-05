@@ -7,20 +7,6 @@
  */
 
 /**
- * Expose `Element`
- */
-
-module.exports = Element;
-
-/**
- * Element
- */
-
-function Element(el){
-  this.el = el;
-};
-
-/**
  * dataset
  * Get/Set value.
  *
@@ -28,7 +14,7 @@ function Element(el){
  * @api public
  */
 
-Element.prototype.data = function (attribute, value) {
+exports.data = function (attribute, value) {
   if (1 == arguments.length) {
     return this.set_data(attribute, value);
   }
@@ -44,7 +30,7 @@ Element.prototype.data = function (attribute, value) {
  * @api public
  */
 
-Element.prototype.get_data = function (attribute) {
+exports.get_data = function (attribute) {
   return this.el.dataset[attribute];
 };
 
@@ -58,7 +44,7 @@ Element.prototype.get_data = function (attribute) {
  * @api public
  */
 
-Element.prototype.set_data = function (attribute, value) {
+exports.set_data = function (attribute, value) {
   this.el.dataset[attribute] = value;
   return this;
 };
