@@ -6,6 +6,14 @@ Element dataset component
 
     $ component install enricomarino/element-dataset
 
+## API
+
+### element#data(attribute:String, [value:Mixed]):Mixed|element
+
+### element#get_data(attribute:String):Mixed
+
+### element#set_data(attribute:String, value:Mixed):element
+
 ## License
 
 (The MIT License)
